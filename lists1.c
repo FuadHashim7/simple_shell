@@ -24,7 +24,7 @@ size_t list_len(const list_t *h)
  *
  * Return: array of strings
  */
-char **list_to_strings(list_t *head)
+char list_to_strings(list_t *head)
 {
 	list_t *node = head;
 	size_t i = list_len(head), j;
@@ -85,7 +85,7 @@ size_t print_list(const list_t *h)
  *
  * Return: match node or null
  */
-list_t *node_starts_with(list_t *nide, char *prefix, char c)
+list_t node_starts_with(list_t *nide, char *prefix, char c)
 {
 	char *p = NULL;
 

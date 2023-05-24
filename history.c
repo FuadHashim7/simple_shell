@@ -7,7 +7,7 @@
  * Return: allocated string containing history file
  */
 
-char *get_history_file(info_t *info)
+char get_history_file(info_t *info)
 {
 	char *buf, *dir;
 
